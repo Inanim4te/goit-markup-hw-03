@@ -116,6 +116,7 @@ img, svg {
 
 .header {
     border-bottom: 1px solid var(--accentColor);
+    padding: 24px 0;
 }
 
 .header .container {
@@ -140,13 +141,16 @@ img, svg {
     font-weight: 500;
 }
 
+.header-nav-list .link {
+    padding: 24px 0;
+}
+
 .header .link:hover, 
 .header .link:focus {
     color: var(--pressedStateColor);
 }
 
 .header-address {
-    padding: 24px 0;
     font-style: normal;
 }
 
