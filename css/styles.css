@@ -55,10 +55,7 @@ img, svg {
 
 .container { 
     max-width: 1158px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,7 +98,7 @@ img, svg {
     letter-spacing: 0.02em
 }
 
-.hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -123,19 +120,21 @@ img, svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 76px;
+}
+
+.header-nav .logo {
+    margin-right: 76px;
 }
 
 .header-nav-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
     color: var(--darkColor);
     font-weight: 500;
 }
@@ -158,22 +157,13 @@ img, svg {
 
 .order-section {
     background-color: var(--darkColor);
-}
-
-.order-section .container {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px; */
-    text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
 }
 
 .main-title {
     margin: 0 auto;
     margin-bottom: 48px;
-    width: 496px;
+    max-width: 496px;
     color: var(--whiteBackgroundColor);
     font-weight: 700;
     font-size: 56px;
@@ -183,6 +173,9 @@ img, svg {
 }
 
 .order-section .button {
+    display: block;
+    min-width: 169px;
+    margin: 0 auto;
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -191,7 +184,6 @@ img, svg {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    vertical-align: middle;
 }
 
 .order-section .button:hover, 
@@ -201,9 +193,17 @@ img, svg {
 
 /* VALUES SECTION */
 
+.values-section {
+    padding: 120px 0;
+}
+
 .values-section-list {
     display: flex;
     gap: 24px;
+}
+
+.values-section-list .list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 .values-section-list .sub-title {
@@ -213,6 +213,7 @@ img, svg {
 /* TEAM SECTION */
 
 .team-section {
+    padding: 120px 0;
     background-color: var(--lightColor);
 }
 
@@ -237,7 +238,7 @@ img, svg {
 
 .team-card-content {
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .team-card-content .sub-title {
@@ -245,6 +246,10 @@ img, svg {
 }
 
 /* PORTFOLIO SECTION */
+
+.portfolio-section {
+    padding: 120px 0;
+}
 
 .portfolio-section .section-title {
     margin-bottom: 72px;
@@ -274,16 +279,20 @@ img, svg {
 /* FOOTER */
 
 .footer {
+    padding: 100px 0;
     color: var(--lightColor);
     background-color: var(--darkColor);
 }
 
-.footer .container {
+/* .footer .container {
     display: flex;
     gap: 16px;
     flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
+} */
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer .text {
