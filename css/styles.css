@@ -140,16 +140,13 @@ img, svg {
     font-weight: 500;
 }
 
-.header-nav-list .list-item {
-    padding: 24px 0;
-}
-
 .header .link:hover, 
 .header .link:focus {
     color: var(--pressedStateColor);
 }
 
 .header-address {
+    padding: 24px 0;
     font-style: normal;
 }
 
